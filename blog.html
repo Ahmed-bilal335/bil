@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  margin-left: 50px;
+  margin-right:50px;
+  background: #f1f1f1;
+}
+
+
+/* Left column */
+
+.column {
+  float: left;
+  width: 47%;
+  margin:0 10px;
+  padding: 10px;
+  height: auto; /* Should be removed. Only for demonstration */
+}
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 100%;
+  padding: 20px;
+  margin: 30px 0;
+  border: 1px solid #8ac798;
+  background-color: white;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Add a card effect for articles */
+.card {  
+   margin-top: 20px;
+}
+.right-card{
+  background-color: white;
+   margin-top: 20px;
+   display: flex;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  width: 64%;
+}
+.row{
+  width:70%;
+  display:inline-block;
+}
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row1{
+  width: 25%;
+    float: right;
+    display: inline;
+}
+.title{
+        color: white;
+    margin: auto;
+    width: 100%;
+    padding: 130px 0;
+    text-align: center;
+        
+  }
+  .h1-heading{
+    font-size: 40px; 
+    text-align: center;
+    padding: 30px 0;
+  }
+  .content{
+    text-align: center;
+  }
+  .post-content{
+  background-color: white;
+    padding: 30px;
+    margin-top: -20px;
+  }
+  .right-text{
+    width: 60%;
+    float: right;
+    margin-left: 12px;
+    padding: 0;
+  }
+  .right-col{
+    float:right;
+  }
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media only screen and (max-width: 767px) {
+  .row, .row1{
+    width: 100%;
+  }
+  .column{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .rightcolumn{
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div style="background-image: url('https://media.istockphoto.com/photos/bright-blue-defocused-blurred-motion-abstract-background-picture-id1047234038?k=6&m=1047234038&s=612x612&w=0&h=O1lP8GIn46sboZL5bnMsznd4A1tRNJ7iXm1MMVh5I5c=');">
+  <div class="title">
+    <h2>moKee Says</h2>
+  </div>
+</div>
+<h1 class="h1-heading">Everything You need<br> to know is here</h1>
+<p class="content">Category1  Category2  Category3  Category4</p>
+
+<div class="row">
+  <div class="column">
+    <div class="card"> 
+     <div class="fakeimg" style="height:200px;">Image</div>
+     <div class="post-content">
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <hr>
+   </div>
+    </div>
+    
+  </div>
+  <div class="column">
+    <div class="card"> 
+     <div class="fakeimg" style="height:200px;">Image</div>
+      <div class="post-content">
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+     <hr>
+   </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card"> 
+     <div class="fakeimg" style="height:200px;">Image</div>
+     <div class="post-content">
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <hr>
+   </div>
+    </div>
+    
+  </div>
+  <div class="column">
+    <div class="card"> 
+     <div class="fakeimg" style="height:200px;">Image</div>
+      <div class="post-content">
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+     <hr>
+   </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card"> 
+     <div class="fakeimg" style="height:200px;">Image</div>
+      <div class="post-content">
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+     <hr>
+   </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card"> 
+     <div class="fakeimg" style="height:200px;">Image</div>
+      <div class="post-content">
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+     <hr>
+   </div>
+    </div>
+  </div>
+</div>
+ 
+  <div class="row1">
+     <div class="rightcolumn">
+    <div class="right-card">
+      <span class="fakeimg" style="height:80px; width: 80px;">Image</span>
+      <span class="right-text"><p>Some text about me in culpa qui officia deserunt mollit anim..</p></span>
+    </div>
+    <div class="right-card">
+      <span class="fakeimg" style="height:80px; width: 80px;">Image</span>
+      <span class="right-text"><p>Some text about me in culpa qui officia deserunt mollit anim..</p></span>
+    </div>
+    
+  </div>
+  <div class="rightcolumn">
+    <div class="right-card">
+      <span class="fakeimg" style="height:80px; width: 80px;">Image</span>
+      <span class="right-text"><p>Some text about me in culpa qui officia deserunt mollit anim..</p></span>
+    </div>
+    <div class="right-card">
+      <span class="fakeimg" style="height:80px; width: 80px;">Image</span>
+      <span class="right-text"><p>Some text about me in culpa qui officia deserunt mollit anim..</p></span>
+    </div>
+    <div class="right-card">
+      <span class="fakeimg" style="height:80px; width: 80px;">Image</span>
+      <span class="right-text"><p>Some text about me in culpa qui officia deserunt mollit anim..</p></span>
+    </div>
+    <div class="right-card">
+      <span class="fakeimg" style="height:80px; width: 80px;">Image</span>
+      <span class="right-text"><p>Some text about me in culpa qui officia deserunt mollit anim..</p></span>
+    </div>
+    
+  </div>
+  </div>
+
+</body>
+</html>
